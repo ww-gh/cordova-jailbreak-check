@@ -1,6 +1,6 @@
 {
   "name": "cordova-jailbreak-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自定义插件用于检测系统IOS是否越狱Android是否Root",
   "cordova": {
     "id": "cordova-jailbreak-check",
