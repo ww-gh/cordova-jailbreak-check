@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-jailbreak-check" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>JailBreakCheck</name>
+    <js-module name="JailBreakCheck" src="www/JailBreakCheck.js">
+        <clobbers target="cordova.plugins.JailBreakCheck"/>
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="JailBreakCheck">
+                <param name="android-package" value="com.easyman.plugin.JailBreakCheck"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+
+        <source-file src="src/android/com/easyman/plugin/ExecShell.java"
+                     target-dir="src/com/easyman/plugin"/>
+        <source-file src="src/android/com/easyman/plugin/JailBreakCheck.java"
+                     target-dir="src/com/easyman/plugin"/>
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="JailBreakCheck">
+                <param name="ios-package" value="JailBreakCheck"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/JailBreakCheck.m"/>
+    </platform>
+</plugin>
