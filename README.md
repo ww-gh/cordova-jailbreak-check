@@ -1,4 +1,4 @@
-# cordova-jailbreak-check V1.0.1
+# cordova-jailbreak-check V1.0.2
 自定义插件用于检测系统IOS是否越狱Android是否被Root；
 
 ## 1、添加插件方式：
